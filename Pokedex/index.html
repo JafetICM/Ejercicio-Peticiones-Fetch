@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="pokedex">
+        <div class="top-screen">
+            <div class="pokedex-header">
+                <h2 class="pokemon-name" id="pokemon-name-display">Bulbasaur</h2>
+                <h3 class="pokemon-id" id="pokemon-id-display">No. 1</h3>
+            </div>
+            <div class="pokedex-info">
+                <p id="pokemon-info">Seleccione un Pokémon para ver los detalles.</p>
+            </div>
+        </div>
+        <div class="bottom-screen">
+            <img id="pokemon-image" src="" alt="Imagen del Pokémon">
+            <div class="controls">
+                <button class="pokedex-button" onclick="previousPokemon()" id="previous-button" disabled>&#9664;</button>
+                <button class="pokedex-button shiny-button" onclick="toggleShiny()">Shiny</button>
+                <button class="pokedex-button" onclick="nextPokemon()" id="next-button" disabled>&#9654;</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
